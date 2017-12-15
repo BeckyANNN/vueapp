@@ -1,0 +1,138 @@
+@home:home;
+.@{home}{
+    background: #fff;
+    width:100%;
+    height: 100%;
+    flex: 1;
+    overflow: auto;
+    &-top{
+        width:100%;
+        height:250px;
+        // opacity: 0;
+      
+        position: fixed;
+        z-index: 2;
+        .slide{
+            width: 100%;
+            height: 250px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .navtitle{
+            position: fixed;
+            top: 30px;
+            left: 40px;
+            z-index: 99;
+            nav{  
+                color:black;
+                background:rgba(255,255,255,.2);
+                line-height: 50px;
+                font-size:24px;
+                float: left;
+                padding: 0 20px;
+                
+                
+            }
+        }
+        
+      
+        .nav-active{
+            color:#fff;
+            background:rgba(255,255,255,.6);
+            border-bottom: 2px solid #0dc441;
+        } 
+    }
+    &-div{
+        width:100%;
+        .common{
+            width:100%;
+            
+        }
+        .hot{
+         .home-nav{
+                width:100%;
+                height:70px;
+                display: flex;
+                margin-top: 250px;
+                position: fixed;
+                background: white;
+                opacity: 0.8;
+                z-index: 3;
+                .nav{
+                    flex:1;
+                    height:70px;
+                    box-sizing: border-box;
+                    border-bottom:1px solid #d9d9d9;
+                    text-align: center;
+                    line-height: 70px;
+                    color:#666;
+                    font-size:28px;
+                }
+                .active{
+                    color:#0dc441;
+                    border-bottom:3px solid #0dc441;
+                }
+            }
+            .home-swiper{
+               
+                width:100%;
+                padding-bottom:92px;
+                box-sizing: border-box;
+                padding-top: 320px;             
+                overflow: auto;
+                .mt-1{
+                    width:100%;
+                    overflow: auto;
+                    .mt-2{
+                        width:100%;
+                        
+                    }
+                    .slide1{
+                        width:100%;
+                        ul{
+                            width:100%;
+                            overflow: hidden;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-around;
+                            li{
+                               
+                                width:45%;
+                                height:370px;
+                                box-sizing: border-box;
+                                margin-top:10px;
+                                a{
+                                    width:100%;
+                                    height:100%;
+                                    display: block;
+                                    img{
+                                        width:100%;
+                                        height:310px;
+                                        border:1px solid #e5e5e5;
+                                    }
+                                    p{
+                                        width:100%;
+                                        height:60px;
+                                        line-height: 60px;
+                                        text-align: center;
+                                        color:#666;
+                                        font-size: 24px;
+                                        border:1px solid #e5e5e5;
+                                    }
+                                }
+                            }
+                            li:nth-child(odd){
+                                padding-right: 10px;
+                            }
+                            li:nth-child(right){
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
